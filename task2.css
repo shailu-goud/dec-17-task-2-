@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 450px;
+    height: 300px;
+    background-color: purple;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    font-family: sans-serif;
+    color: white;
+    line-height: 2;
+}
+
+.container>.text-center {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>.text {
+    position: absolute;
+    right: 0px;
+}
+
+.text-center>p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    color: white;
+}
+
+.text>p {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 10px;
+    height: 40px;
+    width: 95px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(28, 113, 253);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.btn>a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.text-center>.btn {
+    text-align: center;
+}
+
+.footer {
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.66);
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.4s ease;
+
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(55 48 163);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.range {
+    height: 15px;
+    width: 370px;
+    display: flex;
+}
+
+.circle>i {
+    color: white;
+}
+
+.range>div:first-child {
+    width: 60%;
+    background-color: rgb(137, 100, 180);
+}
+
+.range>div:nth-child(2) {
+    width: 25%;
+    background-color: white;
+}
+
+.range>div:last-child {
+    width: 15%;
+    background-color: rgb(28, 113, 253);
+}
+
+.container:hover>.footer {
+    z-index: 999;
+}
